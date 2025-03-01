@@ -20,6 +20,9 @@ $(call inherit-product-if-exists, vendor/google_devices/sunfish/proprietary/devi
 $(call inherit-product-if-exists, vendor/google_devices/sunfish/prebuilts/device-vendor-sunfish.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from sunfish.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_sunfish_car

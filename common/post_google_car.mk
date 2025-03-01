@@ -18,22 +18,21 @@
 #### This file should be included at the bottom of the aosp_PHONE_car.mk file
 ####
 
-# Auto modules
 PRODUCT_PACKAGES += \
-            android.hardware.automotive.audiocontrol-service.example
+        android.hardware.automotive.audiocontrol-service.example
 
-ifneq ($(PIXEL_2023_GEN),)
-    PRODUCT_PACKAGES += android.hardware.automotive.can
-else
+ifneq ($(PIXEL_2023_GEN),true)
     PRODUCT_PACKAGES += android.hardware.automotive.can@1.0-service
+else
+    PRODUCT_PACKAGES += android.hardware.automotive.can
 endif
 
 PRODUCT_PACKAGES_DEBUG += \
-            canhalctrl \
-            canhaldump \
-            canhalsend \
-            android.hardware.automotive.occupant_awareness@1.0-service \
-            android.hardware.automotive.occupant_awareness@1.0-service_mock
+        canhalctrl \
+        canhaldump \
+        canhalsend \
+        android.hardware.automotive.occupant_awareness@1.0-service \
+        android.hardware.automotive.occupant_awareness@1.0-service_mock
 
 BOARD_SEPOLICY_DIRS += device/google_car/common/sepolicy
 

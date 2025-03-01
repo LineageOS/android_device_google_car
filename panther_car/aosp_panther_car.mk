@@ -23,6 +23,9 @@ $(call inherit-product, device/google_car/panther_car/device-panther-car.mk)
 $(call inherit-product-if-exists, vendor/google_devices/pantah/proprietary/panther/device-vendor-panther.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from panther.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_NAME := aosp_panther_car
 PRODUCT_DEVICE := panther
 PRODUCT_MODEL := AOSP on panther

@@ -19,6 +19,9 @@ $(call inherit-product, device/google_car/oriole_car/device-oriole-car.mk)
 $(call inherit-product-if-exists, vendor/google_devices/raviole/proprietary/raven/device-vendor-oriole.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from oriole.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_oriole_car

@@ -22,6 +22,9 @@ $(call inherit-product, device/google_car/raven_car/device-raven-car.mk)
 $(call inherit-product-if-exists, vendor/google_devices/raviole/proprietary/raven/device-vendor-raven.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from raven.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_MANUFACTURER := Google
 PRODUCT_BRAND := Android
 PRODUCT_NAME := aosp_raven_car

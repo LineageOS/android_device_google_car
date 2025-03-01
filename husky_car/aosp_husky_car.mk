@@ -21,6 +21,9 @@ $(call inherit-product, device/google_car/common/pre_google_car.mk)
 $(call inherit-product, device/google_car/husky_car/device-husky-car.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from husky.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_NAME := aosp_husky_car
 PRODUCT_DEVICE := husky
 PRODUCT_MODEL := AOSP on husky

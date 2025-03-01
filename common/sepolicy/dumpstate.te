@@ -1,0 +1,5 @@
+# Allow dumpstate to signal processes to dump.
+allow dumpstate hal_can_socketcan:process signal;
+
+# b/192197221
+dontaudit dumpstate artd:binder call;

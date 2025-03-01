@@ -16,8 +16,6 @@
 
 AUTOMOTIVE_PRODUCT_PATH := google_car/oriole_car
 
-$(call inherit-product, packages/services/Car/car_product/build/car.mk)
-
 $(call inherit-product, device/google/raviole/device-oriole.mk)
 
 include device/google/gs101/uwb/uwb.mk

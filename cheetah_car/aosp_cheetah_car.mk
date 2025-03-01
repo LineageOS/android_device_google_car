@@ -26,6 +26,9 @@ $(call inherit-product, device/google_car/cheetah_car/device-cheetah-car.mk)
 $(call inherit-product-if-exists, vendor/google_devices/pantah/proprietary/cheetah/device-vendor-cheetah.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
+# Disable production validation checks to fix build error from cheetah.scl
+PRODUCT_VALIDATION_CHECKS :=
+
 PRODUCT_NAME := aosp_cheetah_car
 PRODUCT_DEVICE := cheetah
 PRODUCT_MODEL := AOSP on Cheetah

@@ -17,4 +17,6 @@
 <overlay>
     <item target="integer/fastPairModelId" value="@integer/fastPairModelId" />
     <item target="string/fastPairAntiSpoofKey" value="@string/fastPairAntiSpoofKey" />
+    <item target="array/config_occupant_zones" value="@array/config_occupant_zones" />
+    <item target="array/config_occupant_display_mapping" value="@array/config_occupant_display_mapping" />
 </overlay>

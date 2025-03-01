@@ -16,8 +16,6 @@
 
 AUTOMOTIVE_PRODUCT_PATH := google_car/sunfish_car
 
-$(call inherit-product, packages/services/Car/car_product/build/car.mk)
-
 $(call inherit-product, device/google/sunfish/device-sunfish.mk)
 
 PRODUCT_PRODUCT_PROPERTIES+= \

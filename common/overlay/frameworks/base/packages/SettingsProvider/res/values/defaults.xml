@@ -19,4 +19,5 @@
 <resources>
     <integer name="def_user_rotation">1</integer>
     <integer name="def_screen_off_timeout">6000000</integer>
+    <bool name="def_wake_gesture_enabled">false</bool>
 </resources>
