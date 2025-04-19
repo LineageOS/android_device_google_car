@@ -16,7 +16,7 @@
 
 PHONE_CAR_BOARD_PRODUCT := panther_car
 
-$(call inherit-product, device/google/pantah/device-panther.mk)
+$(call inherit-product, device/google_car/panther_car/device-panther.mk)
 
 include device/google/gs101/uwb/uwb.mk
 

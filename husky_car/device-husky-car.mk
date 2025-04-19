@@ -16,7 +16,10 @@
 
 PHONE_CAR_BOARD_PRODUCT := husky_car
 
-$(call inherit-product, device/google/shusky/husky_generic.mk)
+$(call inherit-product, device/google_car/husky_car/device-husky.mk)
+
+# preloaded_nanoapps.json
+PRODUCT_SOONG_NAMESPACES += vendor/google_contexthub/devices/p23_common
 
 #include device/google/gs101/uwb/uwb.mk
 
