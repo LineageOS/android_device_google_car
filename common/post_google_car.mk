@@ -62,18 +62,33 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Explicitly disable support for some Bluetooth profiles included in base phone builds
 PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.asha.central.enabled=false \
-        bluetooth.profile.bap.broadcast.assist.enabled=false \
-        bluetooth.profile.bap.unicast.client.enabled=false \
-        bluetooth.profile.bas.client.enabled=false \
-        bluetooth.profile.csip.set_coordinator.enabled=false \
-        bluetooth.profile.hap.client.enabled=false \
         bluetooth.profile.hfp.ag.enabled=false \
         bluetooth.profile.hid.device.enabled=false \
         bluetooth.profile.hid.host.enabled=false \
         bluetooth.profile.map.server.enabled=false \
-        bluetooth.profile.mcp.server.enabled=false \
         bluetooth.profile.opp.enabled=false \
         bluetooth.profile.pbap.server.enabled=false \
-        bluetooth.profile.sap.server.enabled=false \
-        bluetooth.profile.ccp.server.enabled=false \
-        bluetooth.profile.vcp.controller.enabled=false
+        bluetooth.profile.sap.server.enabled=false
+
+# Add 'GOOGLE_CAR_USE_LE_AUDIO := true' to allow LE Audio on a given Google Car target
+ifeq ($(GOOGLE_CAR_USE_LE_AUDIO), true)
+PRODUCT_PRODUCT_PROPERTIES += \
+        bluetooth.profile.bap.broadcast.assist.enabled=true \
+        bluetooth.profile.bap.unicast.client.enabled=true \
+        bluetooth.profile.bas.client.enabled=true \
+        bluetooth.profile.csip.set_coordinator.enabled=true \
+        bluetooth.profile.mcp.server.enabled=true \
+        bluetooth.profile.vcp.controller.enabled=true \
+        bluetooth.profile.hap.client.enabled=false \
+        bluetooth.profile.ccp.server.enabled=false
+else
+PRODUCT_PRODUCT_PROPERTIES += \
+        bluetooth.profile.bap.broadcast.assist.enabled=false \
+        bluetooth.profile.bap.unicast.client.enabled=false \
+        bluetooth.profile.bas.client.enabled=false \
+        bluetooth.profile.csip.set_coordinator.enabled=false \
+        bluetooth.profile.mcp.server.enabled=false \
+        bluetooth.profile.vcp.controller.enabled=false \
+        bluetooth.profile.hap.client.enabled=false \
+        bluetooth.profile.ccp.server.enabled=false
+endif
