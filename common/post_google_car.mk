@@ -74,6 +74,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 ifeq ($(GOOGLE_CAR_USE_LE_AUDIO), true)
 PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.bap.broadcast.assist.enabled=true \
+        bluetooth.profile.bap.broadcast.source.enabled=true \
         bluetooth.profile.bap.unicast.client.enabled=true \
         bluetooth.profile.bas.client.enabled=true \
         bluetooth.profile.csip.set_coordinator.enabled=true \
@@ -84,6 +85,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 else
 PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.bap.broadcast.assist.enabled=false \
+        bluetooth.profile.bap.broadcast.source.enabled=false \
         bluetooth.profile.bap.unicast.client.enabled=false \
         bluetooth.profile.bas.client.enabled=false \
         bluetooth.profile.csip.set_coordinator.enabled=false \

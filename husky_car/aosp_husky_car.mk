@@ -17,6 +17,8 @@
 DEVICE_IS_64BIT_ONLY := true
 PIXEL_2023_GEN := true
 
+GOOGLE_CAR_USE_LE_AUDIO := true
+
 $(call inherit-product, device/google_car/common/pre_google_car.mk)
 $(call inherit-product, device/google_car/husky_car/device-husky-car.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)

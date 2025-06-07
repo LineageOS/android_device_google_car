@@ -297,7 +297,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # PowerStats HAL
 PRODUCT_SOONG_NAMESPACES += \
     device/google/pantah/powerstats/panther \
-    device/google/pantah
 
 # Fingerprint HAL
 GOODIX_CONFIG_BUILD_VERSION := g7_trusty
@@ -316,7 +315,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.surface_flinger.ignore_hdr_camera_layer
 PRODUCT_PACKAGES += \
     WifiOverlay2022_P10
 
-PRODUCT_SOONG_NAMESPACES += device/google/pantah/panther/
 
 # Trusty liboemcrypto.so
 PRODUCT_SOONG_NAMESPACES += vendor/google_devices/pantah/prebuilts
