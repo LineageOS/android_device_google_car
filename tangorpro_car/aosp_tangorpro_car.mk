@@ -28,7 +28,7 @@ $(call inherit-product, device/google_car/common/post_google_car.mk)
 
 # Scalable UI configuration
 ifneq (,$(RELEASE_LANDSCAPE_SCALABLE_UI))
-PRODUCT_PACKAGES += CarSystemUIDewdLandAospTangorProRRO
+PRODUCT_PACKAGES += CarSystemUIDewdLandAospRRO
 $(call inherit-product, packages/services/Car/car_product/dewd/car_dewd_landscape_common.mk)
 endif
 
