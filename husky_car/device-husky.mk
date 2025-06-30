@@ -77,7 +77,6 @@ include device/google/zuma/device-shipping-common.mk
 include device/google/gs-common/bcmbt/bluetooth.mk
 include device/google/gs-common/touch/stm/predump_stm20.mk
 include device/google/gs-common/touch/gti/predump_gti.mk
-include device/google/gs-common/touch/touchinspector/touchinspector.mk
 
 # Init files
 PRODUCT_COPY_FILES += \
