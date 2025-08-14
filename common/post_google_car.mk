@@ -82,7 +82,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.vcp.controller.enabled=true \
         bluetooth.profile.hap.client.enabled=false \
         bluetooth.profile.ccp.server.enabled=false
-else
+else ifneq ($(GOOGLE_CAR_USE_PHONE_BT_PROFILE), true)
 PRODUCT_PRODUCT_PROPERTIES += \
         bluetooth.profile.bap.broadcast.assist.enabled=false \
         bluetooth.profile.bap.broadcast.source.enabled=false \
