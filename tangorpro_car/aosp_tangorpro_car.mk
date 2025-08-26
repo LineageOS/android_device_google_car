@@ -20,6 +20,8 @@ PIXEL_2023_GEN := true
 PRODUCT_COPY_FILES += \
         device/google_car/tangorpro_car/unavailable_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/unavailable_features_tangorpro_car.xml
 
+PRODUCT_PACKAGES_DEBUG += HideAppsTangorproCarExt
+
 PRODUCT_PACKAGE_OVERLAYS += device/google_car/tangorpro_car/overlay
 
 $(call inherit-product, device/google_car/common/pre_google_car.mk)
