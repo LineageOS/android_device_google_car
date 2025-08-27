@@ -448,7 +448,7 @@ PRODUCT_COPY_FILES += \
 
 # To resolve build failure, comment out this
 # Disable Settings large-screen optimization enabled by Window Extensions
-# PRODUCT_SYSTEM_PROPERTIES += \
+# PRODUCT_PRODUCT_PROPERTIES += \
 #    persist.settings.large_screen_opt.enabled=false
 
 # Enable DeviceAsWebcam support

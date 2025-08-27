@@ -481,7 +481,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/window_extensions.mk)
 
 # To resolve build failure, comment out this
 # Disable Settings large-screen optimization enabled by Window Extensions
-#PRODUCT_SYSTEM_PROPERTIES += \
+#PRODUCT_PRODUCT_PROPERTIES += \
 #    persist.settings.large_screen_opt.enabled=false
 
 # Keyboard height ratio and bottom padding in dp for portrait mode
