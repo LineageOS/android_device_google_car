@@ -476,3 +476,5 @@ endif
 ifeq ($(USE_GOOGLE_CARRIER_SETTINGS), true)
     $(call soong_config_set,carrier_settings,gs_common_paris_assets_path,paris_data_y25q2/latest/pixel2022)
 endif
+
+PRODUCT_SOONG_ONLY := $(RELEASE_SOONG_ONLY_PANTHER)
