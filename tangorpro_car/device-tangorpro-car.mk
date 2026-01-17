@@ -39,3 +39,6 @@ PRODUCT_COPY_FILES := $(filter-out device/google/tangorpro/NVTCapacitivePen.idc:
 PRODUCT_COPY_FILES += \
     device/google_car/tangorpro_car/NVTCapacitiveTouchScreen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/NVTCapacitiveTouchScreen.idc \
     device/google_car/tangorpro_car/NVTCapacitivePen.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/NVTCapacitivePen.idc
+
+PRODUCT_SOONG_NAMESPACES += \
+    packages/services/Car/car_product/displaycompat

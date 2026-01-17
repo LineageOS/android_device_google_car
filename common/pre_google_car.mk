@@ -31,8 +31,7 @@ PRODUCT_ENFORCE_RRO_TARGETS :=
 PRODUCT_ENFORCE_ARTIFACT_PATH_REQUIREMENTS := false
 
 # Set Car Service RRO
-PRODUCT_PACKAGES += CarServiceOverlayPhoneCar \
-GOOGLE_CAR_SERVICE_OVERLAY += CarServiceOverlayPhoneCarGoogle
+PRODUCT_PACKAGES += CarServiceOverlayPhoneCar
 
 # All components inherited here go to system image
 # Skip this for 64 bit only devices
