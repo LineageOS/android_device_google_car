@@ -30,3 +30,6 @@ endif
 
 PRODUCT_PACKAGES += \
     librs_jni
+
+PRODUCT_SOONG_NAMESPACES += \
+    packages/services/Car/car_product/displaycompat
