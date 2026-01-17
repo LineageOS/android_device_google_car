@@ -18,8 +18,8 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/cheetah_car/aosp_cheetah_car.mk \
     $(LOCAL_DIR)/panther_car/aosp_panther_car.mk \
     $(LOCAL_DIR)/husky_car/aosp_husky_car.mk \
-    $(LOCAL_DIR)/tangorpro_car/aosp_tangorpro_car.mk
-
+    $(LOCAL_DIR)/tangorpro_car/aosp_tangorpro_car.mk \
+    $(LOCAL_DIR)/tangorpro_car/lineage_tangorpro_car.mk
 
 COMMON_LUNCH_CHOICES := \
     aosp_cheetah_car-trunk_staging-userdebug \
