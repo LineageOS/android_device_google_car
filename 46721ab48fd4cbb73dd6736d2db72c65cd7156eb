@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ad25f0e5_ba4cecea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-01-17T21:19:12Z",
+      "side": 1,
+      "message": "Builds and boots, needs some platform fixes to get Launcher and EVS HAL to be happy.",
+      "revId": "46721ab48fd4cbb73dd6736d2db72c65cd7156eb",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
