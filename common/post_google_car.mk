@@ -21,11 +21,7 @@
 PRODUCT_PACKAGES += \
         android.hardware.automotive.audiocontrol-service.example
 
-ifneq ($(PIXEL_2023_GEN),true)
-    PRODUCT_PACKAGES += android.hardware.automotive.can@1.0-service
-else
-    PRODUCT_PACKAGES += android.hardware.automotive.can
-endif
+PRODUCT_PACKAGES += android.hardware.automotive.can@1.0-service
 
 PRODUCT_PACKAGES_DEBUG += \
         canhalctrl \
@@ -49,10 +45,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
         ro.boot.wificountrycode=00 \
         ro.config.media_vol_default=0 \
         log.tag.CarTrustAgentUnlockEvent=I
-
-# Phone car targets don't support ramdump
-PRODUCT_PACKAGES += \
-    ExcludeRamdumpUploader
 
 # Disable RCS and EAB for phone car targets
 PRODUCT_PRODUCT_PROPERTIES += \

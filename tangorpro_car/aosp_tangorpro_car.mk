@@ -29,7 +29,6 @@ $(call inherit-product, device/google_car/tangorpro_car/device-tangorpro-car.mk)
 $(call inherit-product, device/google_car/common/post_google_car.mk)
 
 # Scalable UI configuration
-PRODUCT_PACKAGES += CarSystemUIDewdLandAospRRO
 $(call inherit-product, packages/services/Car/car_product/dewd/car_dewd_landscape_common.mk)
 
 # Disable production validation checks to fix build error from tangorpro.scl
